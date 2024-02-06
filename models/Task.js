@@ -15,6 +15,6 @@ const TaskSchema = new mongoose.Schema({
         default: false,
     }
 
-})
+},{collection: "tasks"})
 //model provides actual interface to db. allowing the crud operations. model is to the collection and it takes the proposed collection name and schema to define the structure for data in that collection.
 module.exports = mongoose.model('Task', TaskSchema)
