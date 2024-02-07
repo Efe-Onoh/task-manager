@@ -4,10 +4,13 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   },
   "keywords": [],
-  "author": "",
+  "author": "Efe-Onoh",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^8.2.0",
