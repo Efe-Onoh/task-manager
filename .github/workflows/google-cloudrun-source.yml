@@ -62,7 +62,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - run: echo "provider ${{ toJSON(secrets.WIF_PROVIDER) }} sa ${{ toJSON(secrets.WIF_SERVICE_ACCOUNT) }}"
+      - name: log
+        run: echo "region ${{ toJSON(env.REGION) }} sa ${{ toJSON(secrets.WIF_SERVICE_ACCOUNT) }}"
         
       - name: Google Auth
         id: auth
