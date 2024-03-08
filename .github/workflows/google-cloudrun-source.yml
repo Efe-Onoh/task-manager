@@ -63,7 +63,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: log
-        run: echo "region ${{ vars }} sa ${{ secrets.WIF_SERVICE_ACCOUNT }}"
+        run: echo "region ${{ toJSON(vars) }} sa ${{ secrets.WIF_SERVICE_ACCOUNT }}"
         
       - name: Google Auth
         id: auth
