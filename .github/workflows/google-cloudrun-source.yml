@@ -62,12 +62,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Basic log
+        run: ${{'provider:' toJSON(secrets.WIF_PROVIDER) 'and acc:' toJSON(secrets.WIF_SERVICE_ACCOUNT) }}
+        
       - name: Google Auth
         id: auth
         uses: 'google-github-actions/auth@v2'
         with:
-          workload_identity_provider: '${{ secrets.WIF_PROVIDER }}'
-          service_account: '${{ secrets.WIF_SERVICE_ACCOUNT }}'
+          workload_identity_provider: ${{ secrets.WIF_PROVIDER }}
+          service_account: ${{ secrets.WIF_SERVICE_ACCOUNT }}
 
       - name: Deploy to Cloud Run
         id: deploy
