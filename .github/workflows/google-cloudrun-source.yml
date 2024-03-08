@@ -63,7 +63,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: log
-        run: echo "region ${{ env.REGION }} sa ${{ secrets.WIF_SERVICE_ACCOUNT }}"
+        run: echo "region ${{ vars.REGION }} sa ${{ secrets.WIF_SERVICE_ACCOUNT }}"
         
       - name: Google Auth
         id: auth
@@ -77,7 +77,7 @@ jobs:
         uses: google-github-actions/deploy-cloudrun@v0
         with:
           service: ${{ secrets.SERVICE }}
-          region: ${{ env.REGION }}
+          region: ${{ vars.REGION }}
           # NOTE: If required, update to the appropriate source folder
           source: ./
 
