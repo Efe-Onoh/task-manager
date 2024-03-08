@@ -62,7 +62,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Basic log
       - run: echo "provider ${{ toJSON(secrets.WIF_PROVIDER) }} sa ${{ toJSON(secrets.WIF_SERVICE_ACCOUNT) }}"
         
       - name: Google Auth
