@@ -63,7 +63,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: log
-        run: echo "region ${{ toJSON(vars) }} secrets ${{ secrets }} env ${{env}}"
+        run: echo "region ${{ toJSON(vars) }} secrets ${{ fromJSON(secrets) }} env ${{fromJSON(env)}}"
         
       - name: Google Auth
         id: auth
