@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400|Inconsolata:400');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400|Inconsolata:400");
 *,
 ::after,
 ::before {
@@ -8,29 +8,29 @@
   /* COLORS  */
   /* primary */
   --primary-0: #fff1ef;
-  --primary-50: #ffded6;
-  --primary-100: #ffbebe;
-  --primary-200: #ffa5a5;
-  --primary-300: #ff8d8d;
-  --primary-400: #ff7474;
+  --primary-50: #33ded6;
+  --primary-100: #33bebe;
+  --primary-200: #31bebe;
+  --primary-300: #3f8d8d;
+  --primary-400: #3f7474;
   /* main */
-  --primary-500: #ff5c5c;
-  --primary-600: #d94e4e;
-  --primary-700: #b34040;
-  --primary-800: #8c3333;
-  --primary-900: #662525;
+  --primary-500: #335c5c;
+  --primary-600: #394e4e;
+  --primary-700: #334040;
+  --primary-800: #333333;
+  --primary-900: #298162;
   --primary-1000: #401717;
   --primary-1100: #190909;
   /* grey */
   --grey-0: #fcfafa;
-  --grey-50: #f8f2f2;
-  --grey-100: #f3eaea;
-  --grey-200: #efe2e2;
-  --grey-300: #eadbdb;
-  --grey-400: rgb(230, 211, 211);
-  --grey-500: #e1cbcb;
-  --grey-600: #bfadad;
-  --grey-700: #9e8e8e;
+  --grey-50: #38f2f2;
+  --grey-100: #30eaea;
+  --grey-200: #33e2e2;
+  --grey-300: #36dbdb;
+  --grey-400: rgb(211, 230, 223);
+  --grey-500: #cbe1db;
+  --grey-600: #adbfba;
+  --grey-700: #8e9e99;
   --grey-800: #7c7070;
   --grey-900: #5a5151;
   --grey-1000: #383333;
@@ -45,8 +45,8 @@
   --green-dark: #064e2c;
 
   /* typography */
-  --headingFont: 'Inconsolata', monospace;
-  --bodyFont: 'Montserrat', sans-serif;
+  --headingFont: "Inconsolata", monospace;
+  --bodyFont: "Montserrat", sans-serif;
   --smallText: 0.7em;
   /* rest */
   --backgroundColor: var(--grey-50);
@@ -58,12 +58,9 @@
   --fixed-width: 600px;
   /* box shadows */
   --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 html {
@@ -300,7 +297,7 @@ form > :last-child {
 .form-loading::before {
   background: var(--white);
   position: absolute;
-  content: '';
+  content: "";
   height: 100%;
   width: 100%;
   top: 0;
@@ -310,7 +307,7 @@ form > :last-child {
 }
 
 .form-loading::after {
-  content: '';
+  content: "";
   position: absolute;
   top: calc(50% - 3rem);
   left: calc(50% - 3rem);
