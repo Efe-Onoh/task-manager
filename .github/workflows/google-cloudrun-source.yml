@@ -61,10 +61,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: log
-        run: echo "region ${{ toJSON(vars) }} secrets ${{ toJSON(secrets) }} env ${{toJSON(env)}}"
-        
+ 
       - name: Google Auth
         id: auth
         uses: 'google-github-actions/auth@v2'
